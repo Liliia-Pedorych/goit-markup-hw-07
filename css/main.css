@@ -120,7 +120,7 @@ html {
   margin-bottom: 28px;
 }
 
-.contact-form-wrapper.text-area {
+.text-area {
   margin-bottom: 20px;
 }
 
@@ -134,6 +134,10 @@ html {
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-item:focus, .contact-form-item:not(:placeholder-shown) {
+  border: 1px solid #2196f3;
 }
 
 .contact-form-label {
@@ -162,11 +166,6 @@ html {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-form-item:focus,
-.contact-form-item:not(:placeholder-shown) {
-  border: 1px solid #2196f3;
 }
 
 .contact-form-item:not(:placeholder-shown) ~ .contact-form-item-icon,
@@ -199,7 +198,7 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-item.comment {
+.comment {
   height: 120px;
   padding-top: 12px;
   padding-right: 16px;
