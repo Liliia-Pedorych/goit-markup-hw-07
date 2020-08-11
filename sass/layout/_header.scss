@@ -1,0 +1,115 @@
+/* Хедер */
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.logo {
+  margin-right: 85px;
+}
+
+.navigation-list-item-link {
+  padding-top: 31px;
+  padding-bottom: 33px;
+}
+
+.address-list {
+  display: flex;
+}
+
+.header {
+  border: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .address-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+}
+
+.logo-web {
+  color: var(--accent-color);
+}
+
+.navigation-list-item-link {
+  position: relative;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-list-item .current {
+  color: var(--accent-color);
+}
+
+.current::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.navigation-list-item-link:hover,
+.navigation-list-item-link:focus,
+.address-list-item-link:hover,
+.address-list-item-link:focus {
+  color: var(--accent-color);
+}
+
+.address-list-item-link-icon {
+  margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-list-item-link:hover .address-list-item-link-icon,
+.address-list-item-link:focus .address-list-item-link-icon {
+  fill: var(--accent-color);
+}
+
+.address-list-item-link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
