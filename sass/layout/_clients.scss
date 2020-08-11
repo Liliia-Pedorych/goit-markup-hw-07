@@ -50,11 +50,11 @@
 
 .clients-list-item-link:hover,
 .clients-list-item-link:focus {
-  border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
+  border: 1px solid $accent-color;
+  fill: $accent-color;
 }
 /* .clients-list-item:hover .clients-list-item-link {
-  fill: var(--accent-color);
+  fill: $accent-color;
 } */
 .clients-list-item:not(:last-child) {
   margin-right: 30px;

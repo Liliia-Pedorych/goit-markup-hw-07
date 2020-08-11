@@ -1,13 +1,7 @@
 @charset "UTF-8";
-:root {
-  --title-color: #212121;
-  --text-color: #757575;
-  --accent-color: #2196f3;
-}
-
 body {
   background-color: #ffffff;
-  color: var(--title-color);
+  color: #212121;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -129,7 +123,7 @@ html {
   font-weight: 400;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: var(--text-color);
+  color: #757575;
   transition-property: color, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -151,23 +145,23 @@ html {
 
 .contact-form-item:focus,
 .contact-form-item:not(:placeholder-shown) {
-  border: 1px solid var(--accent-color);
+  border: 1px solid #2196f3;
 }
 
 .contact-form-item:not(:placeholder-shown) ~ .contact-form-item-icon,
 .contact-form-item:focus ~ .contact-form-item-icon {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .contact-form-item:not(:placeholder-shown) + .contact-form-label,
 .contact-form-item:focus + .contact-form-label {
-  color: var(--accent-color);
+  color: #2196f3;
   transform: translate(-25px, -42px);
 }
 
 .contact-form-item:not(:placeholder-shown) + .contact-form-label-comment,
 .contact-form-item:focus + .contact-form-label-comment {
-  color: var(--accent-color);
+  color: #2196f3;
   transform: translateY(-35px);
 }
 
@@ -178,7 +172,7 @@ html {
   font-weight: 400;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: var(--text-color);
+  color: #757575;
   transition-property: color, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -194,7 +188,7 @@ html {
   font-weight: 400;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: var(--title-color);
+  color: #212121;
 }
 
 .checkbox {
@@ -211,7 +205,7 @@ html {
   display: block;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--title-color);
+  border: 2px solid $title-color;
   border-radius: 2px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -220,7 +214,7 @@ html {
   position: relative;
   font-weight: 400;
   line-height: 1.71;
-  color: var(--text-color);
+  color: #757575;
 }
 
 .checkbox-text::after {
@@ -231,14 +225,14 @@ html {
   content: '';
   width: 16px;
   height: 15px;
-  border: 2px solid var(--title-color);
+  border: 2px solid #212121;
   border-radius: 2px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-item:checked + .checkbox-text::after {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   background-origin: border-box;
   border: none;
   background-image: url(../images/check.svg);
@@ -248,7 +242,7 @@ html {
 }
 
 .checkbox-link {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .contact-form-btn {
@@ -262,7 +256,7 @@ html {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
@@ -295,36 +289,10 @@ html {
 }
 
 .contact-form-close-btn:hover .contact-form-close-icon {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 /* Хедер */
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.navigation-list {
-  display: flex;
-}
-
-.navigation-list-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.logo {
-  margin-right: 85px;
-}
-
-.navigation-list-item-link {
-  padding-top: 31px;
-  padding-bottom: 33px;
-}
-
-.address-list {
-  display: flex;
-}
-
 .header {
   border: 1px solid #ececec;
 }
@@ -339,31 +307,52 @@ html {
   margin-right: 50px;
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: #000000;
+  margin-right: 85px;
 }
 
 .logo-web {
-  color: var(--accent-color);
+  color: #2196f3;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .navigation-list-item-link {
   position: relative;
+  padding-top: 31px;
+  padding-bottom: 33px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-color);
+  color: #212121;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.navigation-list-item-link:hover,
+.navigation-list-item-link :focus {
+  color: #2196f3;
+}
+
 .navigation-list-item .current {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .current::after {
@@ -382,11 +371,8 @@ html {
   font-style: normal;
 }
 
-.navigation-list-item-link:hover,
-.navigation-list-item-link:focus,
-.address-list-item-link:hover,
-.address-list-item-link:focus {
-  color: var(--accent-color);
+.address-list {
+  display: flex;
 }
 
 .address-list-item-link-icon {
@@ -398,7 +384,7 @@ html {
 
 .address-list-item-link:hover .address-list-item-link-icon,
 .address-list-item-link:focus .address-list-item-link-icon {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .address-list-item-link {
@@ -407,10 +393,15 @@ html {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--text-color);
+  color: #757575;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-list-item-link:hover,
+.address-list-item-link :focus {
+  color: #2196f3;
 }
 
 /* Герой */
@@ -452,7 +443,7 @@ html {
   color: #ffffff;
   border-radius: 4px;
   border: none;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   cursor: pointer;
 }
 
@@ -493,7 +484,7 @@ html {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--title-color);
+  color: #212121;
 }
 
 .advantages-list .subtitle {
@@ -505,7 +496,7 @@ html {
   margin: 0;
   font-weight: 400;
   line-height: 1.71;
-  color: var(--text-color);
+  color: #757575;
 }
 
 /* Чем мы занимаемся */
@@ -520,7 +511,7 @@ html {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  color: var(--title-color);
+  color: #212121;
 }
 
 .services-list {
@@ -624,7 +615,7 @@ html {
 
 .social-links-item-link:hover,
 .social-links-item-link:focus {
-  background: var(--accent-color);
+  background: #2196f3;
 }
 
 .social-links-item-link:hover .social-links-item-icon,
@@ -639,7 +630,7 @@ html {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  color: var(--title-color);
+  color: #212121;
 }
 
 .team-list-item-position {
@@ -649,7 +640,7 @@ html {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  color: var(--text-color);
+  color: #757575;
 }
 
 /* Постоянные клиенты */
@@ -703,12 +694,12 @@ html {
 
 .clients-list-item-link:hover,
 .clients-list-item-link:focus {
-  border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
+  border: 1px solid #2196f3;
+  fill: #2196f3;
 }
 
 /* .clients-list-item:hover .clients-list-item-link {
-  fill: var(--accent-color);
+  fill: $accent-color;
 } */
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
@@ -801,7 +792,7 @@ html {
 
 .social-list-item-link:hover,
 .social-list-item-link:focus {
-  background: var(--accent-color);
+  background: #2196f3;
 }
 
 .subscribe {
@@ -880,7 +871,7 @@ html {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
-  color: var(--title-color);
+  color: #212121;
   background-color: #f5f4fa;
   border: none;
   border-radius: 4px;
@@ -897,7 +888,7 @@ html {
 .filter-item-btn:hover,
 .filter-item-btn:focus {
   color: #ffffff;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -946,7 +937,7 @@ html {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-color);
+  color: #212121;
 }
 
 .works-list-item-type {
@@ -955,7 +946,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  color: var(--text-color);
+  color: #757575;
 }
 
 .works-list-item-wraper {
