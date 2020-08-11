@@ -48,6 +48,14 @@
 .contact-form {
   margin-bottom: 20px;
   text-align: center;
+
+  .button {
+    padding-top: 10px;
+    padding-right: 55px;
+    padding-bottom: 10px;
+    padding-left: 55px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .contact-form-wrapper {
@@ -200,24 +208,6 @@
 
 .checkbox-link {
   color: $accent-color;
-}
-
-.contact-form-btn {
-  padding-top: 10px;
-  padding-right: 55px;
-  padding-bottom: 10px;
-  padding-left: 55px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: $accent-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 .contact-form-close-btn {
