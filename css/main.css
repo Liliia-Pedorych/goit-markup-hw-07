@@ -630,6 +630,10 @@ html {
   display: flex;
 }
 
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .clients-list-item-link {
   display: flex;
   justify-content: center;
@@ -648,38 +652,30 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list-item-link.foster {
+.clients-list-item-link:hover, .clients-list-item-link:focus {
+  border: 1px solid #2196f3;
+  fill: #2196f3;
+}
+
+.foster {
   padding-top: 24px;
   padding-right: 45px;
   padding-bottom: 24px;
   padding-left: 45px;
 }
 
-.clients-list-item-link.brand {
+.brand {
   padding-top: 22px;
   padding-right: 55px;
   padding-bottom: 22px;
   padding-left: 55px;
 }
 
-.clients-list-item-link.tagline {
+.tagline {
   padding-top: 22px;
   padding-right: 41px;
   padding-bottom: 22px;
   padding-left: 41px;
-}
-
-.clients-list-item-link:hover,
-.clients-list-item-link:focus {
-  border: 1px solid #2196f3;
-  fill: #2196f3;
-}
-
-/* .clients-list-item:hover .clients-list-item-link {
-  fill: $accent-color;
-} */
-.clients-list-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 /* Футер */
