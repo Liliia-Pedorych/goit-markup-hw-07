@@ -3,6 +3,11 @@
 .advantages {
   padding-top: 119px;
   padding-bottom: 94px;
+
+  .subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .advantages-list {
@@ -29,11 +34,6 @@
   margin-bottom: 30px;
   border-radius: 4px;
   background: #f5f4fa;
-}
-
-.subtitle {
-  margin-top: 0;
-  margin-bottom: 10px;
 }
 
 .description {
