@@ -57,6 +57,14 @@ html {
   cursor: pointer;
 }
 
+.subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #212121;
+}
+
 /* Модальное окно */
 .backdrop {
   position: fixed;
@@ -472,14 +480,6 @@ html {
 }
 
 .subtitle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: #212121;
-}
-
-.advantages-list .subtitle {
   margin-top: 0;
   margin-bottom: 10px;
 }

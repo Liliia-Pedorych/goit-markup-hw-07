@@ -11,10 +11,10 @@
 
 .advantages-list-item {
   width: 270px;
-}
 
-.advantages-list-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .advantages-list-item-icon {
@@ -32,14 +32,6 @@
 }
 
 .subtitle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: $title-color;
-}
-
-.advantages-list .subtitle {
   margin-top: 0;
   margin-bottom: 10px;
 }
