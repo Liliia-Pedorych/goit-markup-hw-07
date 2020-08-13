@@ -744,6 +744,10 @@ html {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.social-links-item-link:hover, .social-links-item-link:focus {
+  background: #2196f3;
+}
+
 .social-list-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -752,11 +756,6 @@ html {
   width: 20px;
   height: 20px;
   fill: #ffffff;
-}
-
-.social-list-item-link:hover,
-.social-list-item-link:focus {
-  background: #2196f3;
 }
 
 .subscribe {
