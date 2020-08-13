@@ -65,6 +65,15 @@ html {
   color: #212121;
 }
 
+.title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
 /* Модальное окно */
 .backdrop {
   position: fixed;
@@ -302,6 +311,19 @@ html {
   fill: #2196f3;
 }
 
+.social-links-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Хедер */
 .header {
   border: 1px solid #ececec;
@@ -496,16 +518,6 @@ html {
   padding-bottom: 94px;
 }
 
-.title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: #212121;
-}
-
 .services-list {
   display: flex;
 }
@@ -543,11 +555,6 @@ html {
   background: #f5f4fa;
 }
 
-.team .title {
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
 .team-list {
   display: flex;
 }
@@ -562,30 +569,32 @@ html {
   margin-right: 30px;
 }
 
+.team-list-item-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: #212121;
+}
+
+.team-list-item-position {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: #757575;
+}
+
 .social-links {
   display: flex;
   justify-content: center;
   padding-right: 32px;
   padding-bottom: 24px;
   padding-left: 32px;
-}
-
-.social-links-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-}
-
-.social-links-item-link {
-  display: flex;
-  padding: 12px;
-  border-radius: 50%;
-  transition-property: background;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links-item:not(:last-child) {
@@ -609,26 +618,6 @@ html {
 .social-links-item-link:hover .social-links-item-icon,
 .social-links-item-link:focus .social-links-item-icon {
   fill: #ffffff;
-}
-
-.team-list-item-name {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  color: #212121;
-}
-
-.team-list-item-position {
-  margin-top: 0;
-  margin-bottom: 16px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  color: #757575;
 }
 
 /* Постоянные клиенты */
@@ -755,17 +744,8 @@ html {
   display: flex;
 }
 
-.social-list-item-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+.social-links-item-link {
   background: rgba(255, 255, 255, 0.1);
-  transition-property: background;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-item:not(:last-child) {
