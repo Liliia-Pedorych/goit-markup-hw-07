@@ -367,6 +367,11 @@ html {
   text-decoration: none;
 }
 
+.backdrop, .contact-form-item, .contact-form-label, .contact-form-item-icon, .contact-form-label-comment, .checkbox-text::after, .contact-form-close-icon, .social-links-item-link, .navigation-list-item-link, .address-list-item-link-icon, .address-list-item-link, .social-links-item-icon, .clients-list-item-link {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .container {
   width: 1200px;
   padding-right: 15px;
@@ -425,8 +430,6 @@ html {
   transform: scale(1);
   opacity: 1;
   transition-property: opacity, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -488,8 +491,6 @@ html {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-form-item:focus, .contact-form-item:not(:placeholder-shown) {
@@ -506,8 +507,6 @@ html {
   letter-spacing: 0.01em;
   color: #757575;
   transition-property: color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-form-item-icon {
@@ -520,8 +519,6 @@ html {
   padding: 0;
   display: block;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-form-item:not(:placeholder-shown) ~ .contact-form-item-icon,
@@ -550,8 +547,6 @@ html {
   letter-spacing: 0.01em;
   color: #757575;
   transition-property: color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment {
@@ -583,8 +578,8 @@ html {
   height: 15px;
   border: 2px solid $title-color;
   border-radius: 2px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @extend %animation;
 } */
 .checkbox-text {
   position: relative;
@@ -603,8 +598,6 @@ html {
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-item:checked + .checkbox-text::after {
@@ -642,8 +635,6 @@ html {
   height: 18px;
   fill: #000;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-form-close-btn:hover .contact-form-close-icon {
@@ -659,8 +650,6 @@ html {
   padding: 12px;
   border-radius: 50%;
   transition-property: background;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Хедер */
@@ -713,8 +702,6 @@ html {
   letter-spacing: 0.02em;
   color: #212121;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-list-item-link:hover,
@@ -749,8 +736,6 @@ html {
 .address-list-item-link-icon {
   margin-right: 10px;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list-item-link:hover .address-list-item-link-icon,
@@ -766,8 +751,6 @@ html {
   letter-spacing: 0.02em;
   color: #757575;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list-item-link:hover,
@@ -945,8 +928,6 @@ html {
   height: 20px;
   fill: #afb1b8;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links-item-link:hover,
@@ -987,8 +968,6 @@ html {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition-property: fill, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-item-link:hover, .clients-list-item-link:focus {
@@ -1083,7 +1062,8 @@ html {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.social-links-item-link:hover, .social-links-item-link:focus {
+.social-links-item-link:hover,
+.social-links-item-link:focus {
   background: #2196f3;
 }
 

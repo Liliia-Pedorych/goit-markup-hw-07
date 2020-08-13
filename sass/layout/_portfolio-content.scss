@@ -27,8 +27,8 @@
   border-radius: 4px;
   cursor: pointer;
   transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @extend %animation;
 
   &:hover,
   &:focus {
@@ -112,8 +112,8 @@
     height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
     transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @extend %animation;
   }
 }
 
@@ -133,8 +133,8 @@
   line-height: 1.56;
   color: #ffffff;
   transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @extend %animation;
 }
 
 .works-list-item-link:hover .works-list-item-wraper::after,

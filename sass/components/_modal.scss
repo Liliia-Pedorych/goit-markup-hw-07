@@ -11,8 +11,8 @@
   transform: scale(1);
   opacity: 1;
   transition-property: opacity, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @extend %animation;
 }
 
 .backdrop.is-hidden {
@@ -75,8 +75,8 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @extend %animation;
 
   &:focus,
   &:not(:placeholder-shown) {
@@ -94,8 +94,8 @@
   letter-spacing: 0.01em;
   color: $text-color;
   transition-property: color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @extend %animation;
 }
 
 .contact-form-item-icon {
@@ -108,8 +108,8 @@
   padding: 0;
   display: block;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @extend %animation;
 }
 
 .contact-form-item:not(:placeholder-shown) ~ .contact-form-item-icon,
@@ -138,8 +138,8 @@
   letter-spacing: 0.01em;
   color: $text-color;
   transition-property: color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @extend %animation;
 }
 
 .comment {
@@ -171,8 +171,8 @@
   height: 15px;
   border: 2px solid $title-color;
   border-radius: 2px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @extend %animation;
 } */
 
 .checkbox-text {
@@ -191,8 +191,8 @@
     height: 15px;
     border: 2px solid $title-color;
     border-radius: 2px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @extend %animation;
   }
 }
 
@@ -231,8 +231,8 @@
   height: 18px;
   fill: #000;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @extend %animation;
 
   .contact-form-close-btn:hover & {
     fill: $accent-color;
